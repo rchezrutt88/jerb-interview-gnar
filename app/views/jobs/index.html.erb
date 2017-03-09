@@ -1,30 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Jobs</h1>
+<h1>Job Postings</h1>
 
 <table>
   <thead>
     <tr>
+      <th>Date</th>
       <th>Poster</th>
       <th>Category</th>
       <th>Location</th>
       <th>Status</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th>Actions</th>
     </tr>
   </thead>
 
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
+        <td><%= job.created_at.to_date%></td>
         <td><%= job.poster %></td>
         <td><%= job.category %></td>
         <td><%= job.location %></td>
         <td><%= job.status %></td>
         <td><%= job.description %></td>
-        <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
