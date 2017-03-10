@@ -3,7 +3,7 @@ require 'test_helper'
 class JobTest < ActiveSupport::TestCase
 
   def setup
-    @job = Job.new(poster: 'John Doe', location: 'Swampscott', status: 'new', category: 'pool cleaning')
+    @job = jobs(:one)
   end
 
   test 'valid job' do
