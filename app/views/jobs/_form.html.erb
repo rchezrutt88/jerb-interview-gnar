@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :poster %><br>
     <%= f.text_field :poster %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :category %><br>
     <%= f.text_field :category %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :location %><br>
     <%= f.text_field :location %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <%= f.select :status, ['New', 'Pending', 'Complete'] %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => 'btn btn-primary'%>
   </div>
 <% end %>
