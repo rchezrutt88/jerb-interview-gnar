@@ -4,12 +4,12 @@ one:
   poster: MyString
   category: MyString
   location: MyString
-  status: MyString
+  status: new
   description: MyString
 
 two:
   poster: MyString
   category: MyString
   location: MyString
-  status: MyString
+  status: pending
   description: MyString
