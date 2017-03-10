@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 jobs = [
-    ['Nick Maloney', 'Landscaping', 'Boston', 'New'],
-    ['Peter Brown', 'Landscaping', 'Bedford', 'Pending'],
-    ['Jen Morris', 'Babysitting', 'Boston', 'Complete']]
+    ['Nick Maloney', 'landscaping', 'Boston', 'new'],
+    ['Peter Brown', 'landscaping', 'Bedford', 'pending'],
+    ['Jen Morris', 'babysitting', 'Boston', 'complete']]
 
 jobs.each do |poster, category, location, status|
   Job.create(poster: poster, category: category, location: location, status: status)
