@@ -1,9 +1,11 @@
 class JobsController < ApplicationController
+  handles_sortable_columns
   before_action :set_job, only: [:show, :edit, :update, :destroy]
 
   # GET /jobs
   def index
-    @jobs = Job.all
+    order = sortable_column_order
+    @jobs = Job.order(order)
   end
 
   # GET /jobs/1
