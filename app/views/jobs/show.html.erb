@@ -1,38 +1,38 @@
 <div class="container">
-<div class="row">
-  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Date:</strong>
-    <%= @job.created_at.strftime('%D') %>
-  </p>
+    <p>
+      <strong>Date:</strong>
+      <%= @job.created_at.strftime('%D') %>
+    </p>
 
-<p>
-  <strong>Poster:</strong>
-  <%= @job.poster %>
-</p>
+    <p>
+      <strong>Poster:</strong>
+      <%= @job.poster %>
+    </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @job.category.capitalize %>
-</p>
+    <p>
+      <strong>Category:</strong>
+      <%= @job.category.capitalize %>
+    </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @job.location %>
-</p>
+    <p>
+      <strong>Location:</strong>
+      <%= @job.location %>
+    </p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @job.status.capitalize %>
-</p>
+    <p>
+      <strong>Status:</strong>
+      <%= @job.status.capitalize %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @job.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @job.description %>
+    </p>
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
-</div>
+    <%= link_to 'Edit', edit_job_path(@job) %> |
+    <%= link_to 'Back', jobs_path %>
+  </div>
 </div>
